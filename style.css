@@ -1,0 +1,107 @@
+body{
+    background-color: lightgrey;
+    margin: 0px;
+}
+
+button{
+    border-radius: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+    padding-left: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.site-head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color:black;
+    padding-top: 25%;
+}
+
+.calc-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10%;
+}
+
+.calc{
+    background-color: grey;
+    border-style: solid;
+    border-color: grey;
+    border-width: 25px;
+    border-radius: 10px;
+}
+
+
+
+.display{
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-width: 2px;
+    height: 60px;
+}
+.calc-btn{
+    display: flex;
+    border-style: solid;
+    height: 80px;
+    width: 80px;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.calc-head-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    margin:1px;
+}
+
+.calc-head{
+    display: flex;
+    justify-content: space-around;
+}
+
+.first-row{
+    display: flex;
+    gap:4px;
+}
+
+.second-row{
+    display: flex;
+    gap:4px;
+}
+
+.third-row{
+    display: flex;
+    gap:4px;
+}
+
+.fourth-row{
+    display: flex;
+    gap:4px;
+}
+
+.foot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkslategrey;
+}
+
+.git{
+
+    height: 50px;
+    width: 50px;
+}

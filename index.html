@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js" defer></script>
+</head>
+
+<body>
+    <header class="site-head">
+        Odin Project Calculator
+    </header>
+    <div class="calc-wrapper">
+        <div class="calc">
+            <section class="display"></section>
+            <div class="calc-head">
+                <button class="calc-head-btn">C</button>
+                <button class="calc-head-btn">Delete</head>
+            </div>
+            <div class="second-row">
+                <button class="calc-btn" onclick="onOneClick()">1</>
+                    <button class="calc-btn" onclick="onTwoClick()">2</button>
+                    <button class="calc-btn" onclick="onThreeClick()">3</button>
+                    <button class="calc-btn">-</button>
+            </div>
+            <div class="third-row">
+                <button class="calc-btn" onclick="onFourClick()">4</button>
+                <button class="calc-btn" onclick="onFiveClick()">5</button>
+                <button class="calc-btn" onclick="onSixClick()">6</button>
+                <button class="calc-btn">X</button>
+            </div>
+            <div class="fourth-row">
+                <button class="calc-btn" onclick="onSevenClick()">7</button>
+                <button class="calc-btn" onclick="onEightClick()">8</button>
+                <button class="calc-btn" onclick="onNineClick()">9</button>
+                <button class="calc-btn">&divide;</button>
+            </div>
+            <div class="first-row">
+                <button class="calc-btn">.</button>
+                <button class="calc-btn" onclick="onZeroClick()">0</button>
+                <button class="calc-btn">=</button>
+                <button class="calc-btn">+</button>
+            </div>
+        </div>
+    </div>
+    <footer class="foot"><img class="git" src="./images/git.png"><a href="github.com/PauloRadavelli">Paulo S.
+            Radavelli</a></footer>
+</body>
+
+</html>

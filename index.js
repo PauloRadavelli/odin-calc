@@ -1,23 +1,42 @@
 let display = document.querySelector(".calculator-screen");
 
-let firstNumber = '';
-let secondNumber = '';
+let firstNumber, secondNumber, operation;
 
-function operate(firstNumber, secondNumber,operator){
-    switch (operator){
-        case '+':
-            return firstNumber+secondNumber;
-        case '-': 
-            return firstNumber-secondNumber;
-        case '/':
-            return firstNumber/secondNumber;
-        case '*':
-            return firstNumber*secondNumber;
+function onEqualClick(){
+    secondNumber = parseFloat(display.value);
+    switch(operation){
+        case '+': display.value = firstNumber+secondNumber;
+            break;
+        case '-': display.value = firstNumber-secondNumber;
+            break;
+        case '*': display.value = firstNumber*secondNumber;
+            break;
+        case '/': display.value = firstNumber/secondNumber;
     }
 }
 
 function onPlusClick(){
-       
+    firstNumber = parseFloat(display.value);
+    operation = '+';
+    display.value = '';
+}
+
+function onMinusClick(){
+    firstNumber = parseFloat(display.value);
+    operation = '-';
+    display.value = '';
+}
+
+function onMultiplyClick(){
+    firstNumber = parseFloat(display.value);
+    display.value = '';
+    operation = '*';
+}
+
+function onDivideClick(){
+    firstNumber = parseFloat(display.value);
+    operation = '/';
+    display.value = '';
 }
 
 function screen(value){

@@ -13,16 +13,15 @@
 <body>
 
     <body>
-        <<div class="calculator">
+        <div class="calculator">
 
             <input type="text" class="calculator-screen" placeholder="0" disabled />
-
             <div class="calculator-keys">
 
                 <button type="button" class="operator" value="+" onclick="onPlusClick()">+</button>
-                <button type="button" class="operator" value="-">-</button>
-                <button type="button" class="operator" value="*">&times;</button>
-                <button type="button" class="operator" value="/">&divide;</button>
+                <button type="button" class="operator" value="-" onclick="onMinusClick()">-</button>
+                <button type="button" class="operator" value="*" onclick="onMultiplyClick()">&times;</button>
+                <button type="button" class="operator" value="/" onclick="onDivideClick()">&divide;</button>
 
                 <button type="button" value="7" onclick="screen('7')">7</button>
                 <button type="button" value="8" onclick="screen('8')">8</button>
@@ -43,10 +42,10 @@
                 <button type="button" class="decimal" value="." onclick="screen('.')">.</button>
                 <button type="button" class="all-clear" onclick="clean()">AC</button>
 
-                <button type="button" class="equal-sign" value="=">=</button>
+                <button type="button" class="equal-sign" value="=" onclick="onEqualClick()">=</button>
 
             </div>
-            </div>
+        </div>
     </body>
 
 </html>
